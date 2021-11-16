@@ -1,0 +1,35 @@
+$color-primary: #683f27;
+$color-secondary: #f0c093;
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+}
+
+.jumbotron {
+    background-color: $color-primary;
+}
+
+.nav {
+    text-align: center;
+    background-color: rgb(235, 204, 168);
+    font-family: "Raleway", sans-serif;
+}
+
+.nav-item {
+    width: 20%;
+    border: 1px solid white;
+}
+
+.nav .active{
+    background-color: $color-secondary;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover{
+    color: black;
+}
