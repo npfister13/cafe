@@ -93,6 +93,14 @@ h2 {
     margin-bottom: 120px;
 }
 
+#menuPanelBody {
+    td {
+        background-color: $color-panel;
+        vertical-align: middle;
+        }
+    }
+}
+
 footer {
     padding-top: 30px;
     padding-bottom: 30px;

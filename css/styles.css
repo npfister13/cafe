@@ -70,6 +70,12 @@ h2 {
   margin-top: 120px;
   margin-bottom: 120px; }
 
+#menuPanelBody td {
+  background-color: #ececec;
+  vertical-align: middle; }
+  #menuPanelBody td img {
+    max-width: 50%; }
+
 footer {
   padding-top: 30px;
   padding-bottom: 30px;
