@@ -1,20 +1,73 @@
-$color-primary: #683f27;
-$color-secondary: #f0c093;
+$color-primary: #461f1f;
+$color-secondary: #f0ad93;
+$color-panel: rgb(236, 236, 236);
+$font-roboto: "Roboto", sans-serif;
+$font-raleway: "Raleway", sans-serif;
+$font-patrick: "Patrick Hand", cursive;
+$font-caveat-curisve: "Caveat", cursive;
 
-h1, h2, h3 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 84px;
+body{
+    font-family: $font-roboto;
+    background-color: $color-primary;
+}
+
+h1 {
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 124px;
+}
+
+h2 {
+    font-family: $font-caveat-curisve;
+    font-size: 74px;
 }
 
 .jumbotron {
     background-color: $color-primary;
+    margin-bottom: 0px;
+}
+
+#bg {
+    position: fixed;
+    top: -70%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+}
+
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+#infoPanel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $color-panel;
+}
+
+#infoPanelBody {
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    margin: 0;
+    border: 1px dotted;
 }
 
 .nav {
     text-align: center;
-    background-color: rgb(235, 204, 168);
-    font-family: "Raleway", sans-serif;
+    background-color: rgb(212, 112, 87);
+    font-family: $font-raleway;
+    li {
+        color: white;
+    }
 }
 
 .nav-item {
@@ -22,14 +75,26 @@ h1, h2, h3 {
     border: 1px solid white;
 }
 
-.nav .active{
-    background-color: $color-secondary;
+.nav-link {
+    color: white;
 }
 
-.nav-link {
+.nav .active .nav-link{
+    background-color: $color-secondary;
     color: black;
 }
 
 .nav-link:hover{
     color: black;
+}
+
+#orderButton{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(36, 27, 23);
 }
