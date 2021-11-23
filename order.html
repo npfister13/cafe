@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&Roboto&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Deep Rock Café</title>
+</head>
+
+<body>
+    <div id="bg">
+        <img src="img/coffee-plant-01.jpg" alt="">
+    </div>
+
+    <header class="jumbotron jumbotron-fluid pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-light">Deep Rock</h1>
+                    <h2 class="text-center text-light">Café</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light justify-content-center pb-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#drNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="drNavbar">
+                    <ul class="nav navbar-collapse">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Order</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div id="orderPanel" class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div id="orderPanelBody" class="row row-content align-items-center orderPanelBody">
+                    <div class="col-md-10 offset-1 align-content-center">
+                        Your Order</br>
+                        <label for="drinkChoice" class="drink col-md-3">Choose your drink:</label>
+                        <label id="temp" for="tempChoice" class="temp col-md-3">Drink temperature:</label>
+                        <label id="food" for="foodChoice" class="food col-md-3">Food:</label>
+                        <br>
+                        <select id="drinkChoice" class="drink btn btn-light col-md-3" name="drink">
+                            <option value="">Select...</option>
+                            <option value="mocha">Mocha</option>
+                            <option value="whiteMocha">White Mocha</option>
+                            <option value="latte">Latte</option>
+                            <option value="coffee">Coffee</option>
+                            <option value="earlGrey">Earl Grey</option>
+                            <option value="londonFog">London Fog</option>
+                        </select>
+                        <select id="tempChoice" class="temp btn btn-light col-md-3" name="temperature">
+                            <option value="tempHot">Select...</option>
+                            <option value="tempHot">Hot</option>
+                            <option value="tempIced">Iced</option>
+                        </select>
+                        <select id="foodChoice" class="food btn btn-light col-md-3" name="food">
+                            <option value="">Select...</option>
+                            <option value="bagel">Bagel w/ Cream Cheese</option>
+                            <option value="chocMuffin">Chocolate Chip Muffin</option>
+                            <option value="blueMuffin">Blueberry Muffin</option>
+                            <option value="lemonBread">Lemon Bread</option>
+                            <option value="strawberryPastry">Strawberry-Frosted Toaster Pastry</option>
+                            <option value="blueberryPastry">Blueberry-Frosted Toaster Pastry</option>
+                        </select>
+                        
+                       
+                    </div>
+                    <div class="col-md-10 offset-1 align-content-center">
+                        <label class="col-md-3">Snack:</label>
+                        <label class="col-md-3">Extras:</label><br>
+                        <select id="snacksId" class="btn btn-light col-md-3 align-top" name="food">
+                            <option value="">Select</option>
+                            <option value="nacho">Nacho Cheese Chips</option>
+                            <option value="coffeeBeans">Chocoolate-Covered Coffee Beans</option>
+                            <option value="applesauce">Chocolate Pudding</option>
+                            <option value="jerky">Fruit Slices</option>
+                            <option value="vegetableSticks">Vegetable Sticks</option>
+                        </select>
+                        <div id="extras" class="d-inline-block col-md-6 text-justify">
+                            <input type="checkbox" id="whipcream" name="whipcream" value="whipcream">
+                            <label for="whipcream">Whip Cream</label><br>
+                            <input type="checkbox" id="chocSyrup" name="chocSyrup" value="chocSyrup">
+                            <label for="chocSyrup">Chocolate Syrup</label>
+                            <input type="checkbox" id="vanSyrup" name="vanSyrup" value="vanSyrup">
+                            <label for="vanSyrup">Vanilla Syrup</label>
+                            <input type="checkbox" id="carSyrup" name="carSyrup" value="carSyrup">
+                            <label for="carSyrup">Caramel Syrup</label><br>
+                            <input type="checkbox" id="chocShavings" name="chocShavings" value="chocShavings">
+                            <label for="chocShavings">Chocolate Shavings</label><br>
+                            <input type="checkbox" id="vanPump" name="vanPump" value="vanPump">
+                            <label for="vanPump">Vanilla Pump</label>
+                            <input type="checkbox" id="chocPump" name="chocPump" value="chocPump">
+                            <label for="chocPump">Chocolate Pump</label>
+                            <input type="checkbox" id="carPump" name="carPump" value="carPump">
+                            <label for="carPump">Caramel Pump</label>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-sm-4 offset-8">
+                <button class="btn btn-success" onclick="newOrderEntry()">
+                    Add new item
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="window.location.reload()">Submit</div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 offset-1" >
+                    <ul class="list-unstyled text-center text-white">
+                        <li>Hours:</li>
+                        <li>Mon-Fri: 6:00 a.m. - 12 a.m.</li>
+                        <li>Sat: 7:00 a.m. - 1 a.m.</li>
+                        <li>Sun: Closed</li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-3 offset-1">
+                    <ul class="list-unstyled text-white">
+                        <li>Located at</li>
+                        <li>123 S. Main St.</li>
+                        <li>Washington, D.C.</li>
+                        <li>12345</li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-3">
+                    <ul class="list-unstyled text-white text-center">
+                        <li>Connect with us</li>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"> </i>
+                        <i class="fa fa-twitter"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+
+    <script>
+
+        var i = 0;
+        var original = document.getElementById('orderPanelBody');
+
+        function newOrderEntry() {
+            var btn = document.createElement("button");
+            btn.classList.add('btn', 'btn-danger');
+            btn.innerHTML = 'Remove entry';
+            var clone = original.cloneNode(true);
+            clone.id = 'orderPanelBody' + ++i;
+            btn.id = clone.id;
+            btn.onclick = function removeOrderEntry() {
+                var cloneRemove = btn.id;
+                document.getElementById(cloneRemove).remove();
+                original.parentNode.removeChild(btn);
+            }
+            
+            original.parentNode.appendChild(clone);
+            clone.parentNode.appendChild(btn);
+            
+           
+        }
+
+        function removeOrderEntry() {
+            var cloneRemove = "orderPanelBody" + i;
+            document.getElementById(cloneRemove).remove();
+        }
+
+        function shiftFoodButton(){
+            if (document.getElementById("food").classList.contains("offset-3")){
+                document.getElementById("food").classList.remove("offset-3");
+            };
+        }
+
+
+    </script>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>

@@ -70,11 +70,48 @@ h2 {
   margin-top: 120px;
   margin-bottom: 120px; }
 
-#menuPanelBody td {
+#menuPanel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ececec; }
+
+#menuPanelBody {
   background-color: #ececec;
-  vertical-align: middle; }
-  #menuPanelBody td img {
-    max-width: 50%; }
+  width: 100%;
+  margin: 0; }
+  #menuPanelBody thead {
+    font-size: 42px; }
+  #menuPanelBody tbody th {
+    background-color: #647a67;
+    color: white;
+    font-size: 28px; }
+  #menuPanelBody td {
+    background-color: #b6b0a5;
+    vertical-align: middle; }
+  #menuPanelBody h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px; }
+
+#orderPanel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ececec; }
+
+.orderPanelBody {
+  width: 100%;
+  padding: 30px;
+  font-size: 22px;
+  margin: 0;
+  border: 2px ridge;
+  background-color: #d6c2b8; }
+  .orderPanelBody label {
+    font-size: 18px; }
+  .orderPanelBody option {
+    font-size: 14px; }
+  .orderPanelBody #extras {
+    background-color: #ececec; }
+    .orderPanelBody #extras label {
+      font-size: 16px; }
 
 footer {
   padding-top: 30px;

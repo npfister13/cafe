@@ -6,6 +6,7 @@ $font-raleway: "Raleway", sans-serif;
 $font-patrick: "Patrick Hand", cursive;
 $font-caveat-curisve: "Caveat", cursive;
 
+
 body{
     font-family: $font-roboto;
     background-color: $color-primary;
@@ -93,13 +94,76 @@ h2 {
     margin-bottom: 120px;
 }
 
+#menuPanel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $color-panel;
+}
+
 #menuPanelBody {
-    td {
-        background-color: $color-panel;
-        vertical-align: middle;
+    background-color: $color-panel;
+    width: 100%;
+    margin: 0;
+    thead{
+        font-size: 42px;
+    }
+    tbody {
+        th{
+            background-color: #647a67;
+            color: white;
+            font-size: 28px;
         }
     }
+    td {
+        background-color: rgb(182, 176, 165);
+        vertical-align: middle;
+        }
+    h3 {
+        font-family: $font-roboto;
+        font-size: 26px;
+    }
 }
+
+#orderPanel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $color-panel;
+}
+
+.orderPanelBody {
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    margin: 0;
+    border: 2px ridge;
+    background-color: rgb(214, 194, 184);
+    label {
+        font-size: 18px;
+    }
+    option {
+        font-size: 14px;
+    }
+    #extras {
+        background-color: $color-panel;
+        label{
+            font-size: 16px;
+        }
+        
+    }
+    
+}
+
+// #tempChoice {
+//     display: none;
+// }
+
+// #temp {
+//     display: none;
+// }
+
+
+
+
 
 footer {
     padding-top: 30px;
