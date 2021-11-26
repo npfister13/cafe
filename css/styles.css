@@ -113,6 +113,16 @@ h2 {
     .orderPanelBody #extras label {
       font-size: 16px; }
 
+.ownerFav {
+  font-size: 16px;
+  font-family: "Patrick Hand", cursive; }
+
+#yourName {
+  padding-top: 10px; }
+
+#yourEmail {
+  padding-top: 10px; }
+
 footer {
   padding-top: 30px;
   padding-bottom: 30px;
