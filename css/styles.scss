@@ -60,6 +60,10 @@ h2 {
     font-size: 22px;
     margin: 0;
     border: 1px dotted;
+    h3 {
+        font-family: $font-patrick;
+        font-size: 34px;
+    }
 }
 
 .nav {
@@ -111,7 +115,8 @@ h2 {
         th{
             background-color: #647a67;
             color: white;
-            font-size: 28px;
+            font-size: 34px;
+            font-family: $font-patrick;
         }
     }
     td {
@@ -150,6 +155,9 @@ h2 {
         }
         
     }
+    h3 {
+        font-family: $font-patrick;
+    }
     
 }
 
@@ -166,14 +174,11 @@ h2 {
     padding-top: 10px;
 }
 
-// #tempChoice {
-//     display: none;
-// }
-
-// #temp {
-//     display: none;
-// }
-
+form {
+    label {
+        font-family: $font-patrick;
+    }
+}
 
 
 
